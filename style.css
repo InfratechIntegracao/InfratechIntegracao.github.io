@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-color: ##3f3d3d;
+    --tex-color: #fff;
+    --main-color: #c9f30f;
+    --other-color: #fcfcfc;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
+body {
+    background-color: #000000;
+    color: var(--tex-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+}
+
+/* LOGO - INFRATECH-UNEX */
+.logo {
+    width: 100px;
+}
+
+
+
+
+.navegacao {
+    display: flex;
+}
+
+.navegacao a {
+    color: #fff;
+    font-size: var(--p-font);
+    font-weight: 5000;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: color 0.55s ease;
+}
+
+/* Navegação - Visão, Destaque, Avaliações e Contate-nos */
+.navegacao a:hover {
+    color: #ff0000;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header-icons i {
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+/* Icones carrinho e pontos */
+.header-icons i:hover {
+    transform: translateY(-5px);
+    color: #ff0000;
+}
+
+.section {
+    padding: 0 15%;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Centraliza o texto */
+.home-text {
+    max-width: 500px;
+    text-align: center; 
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.home-text h5 {
+    color: #ffffff99;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.home-text h3 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Ajuste esse valor conforme necessário */
+.home-img {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px; 
+}
+
+/* Ajusta a largura da imagem */
+.home-img img {
+    max-width: 100%;
+    width: 70%; 
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid var(--tex-color);
+    transition: all 0.55s ease;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: var(--tex-color);
+    border: 2px solid var(--tex-color);
+    color: #ffffff;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main li img {
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.testimonial h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.features {
+    background-color: var(--bg-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+    font-size: 36px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.feature p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--tex-color);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #e9c707;
+}
+
+.avaliacoes {
+    background-color: #3f3d3d;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.avaliacoes-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #28302f; /* ou a cor desejada */
+    padding: 20px;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.avaliacoes h3 {
+    color: #ffffff; /* ou a cor desejada */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.avaliacao {
+    text-align: center;
+    margin-top: 20px; /* Ajuste o espaçamento entre as avaliações conforme necessário */
+}
+
+.avaliacao p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.avaliacao p.author {
+    margin-top: 10px;
+    font-style: italic;
+    color: #777; /* ou a cor desejada */
+}
+
+.contato-float {
+    display: fixed;
+    position: center;
+    bottom: 20px;
+    
+}
+
+.contato {
+    background-color: #3f3d3d;
+    color: #fff;
+    padding: -220px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 130px
+}
+
+#contato.hidden {
+    display: none;
+  }

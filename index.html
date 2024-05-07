@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Infra Tech - UNEX</title>
+</head>
+<body>
+
+
+<!-- Substitua a linha existente pela nova linha -->
+<div class="header-wrapper">
+    <header>
+    
+    
+        <ul class="navegacao">
+            <img class="logo" src="./images/INFRATECH.png" alt="">
+            <li><a href="#">Visão geral</a></li>
+            <li><a href="#">Destaques</a></li>
+            <li><a href="#">Avaliações</a></li>
+            <li><a href="#">Contate-nos</a></li>
+        </ul><!--navegacao-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+</div>
+
+
+    <section class="home">
+        <div class="home-img">
+             <img src="./images/fotocapa.jpg" class="one">
+        </div><!--home-img-->
+
+        <div class="home-text">
+
+            <h1>Infratech Integração</h1>
+            <h5>Somos uma empresa que visa a melhoria das ferramentas para a àrea de engenharia</h5>
+            <h3>Um programa inovador que está chegando no mercado!</h3>
+            <a href="#" class="btn">Entre em Contato</a>
+            
+        </div><!--home-text-->
+    </section><!--home-->
+
+
+    <section class="testimonial">
+        <h3>Destaques dos Projetos</h3>
+    </section>
+
+   
+
+
+    <section id="destaques do infratech" class="features">
+        <div class="features-container">
+            <div class="feature">
+                <i class='bx bx-check'></i>
+                <p>Inserir informação 01</p>
+            </div>
+            <div class="feature">
+                <i class='bx bx-check'></i>
+                <p>Inserir informação 02</p>
+            </div>
+            <div class="feature">
+                <i class='bx bx-check'></i>
+                <p>Inserir informação 02</p>
+            </div>
+            <div class="feature">
+                <i class='bx bx-check'></i>
+                <p>Inserir informação 03</p>
+            </div>
+            <div class="feature">
+                <i class='bx bx-check'></i>
+                <p>Inserir informação 04</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adicione esta seção abaixo da seção de destaques do óculos -->
+    <section id="avaliacoes" class="avaliacoes">
+        <div class="avaliacoes-container">
+            <h3>Avaliações dos Usuários</h3>
+    
+            <div class="avaliacao">
+                <p>Inserir informação 01</p>
+                <p class="author">- João Silva</p>
+            </div>
+    
+            <!-- Adicione mais avaliações conforme necessário -->
+            <div class="avaliacao">
+                <p>Inserir informação 02</p>
+                <p class="author">- Maria Oliveira</p>
+            </div>
+    
+            <div class="avaliacao">
+                <p>Inserir informação 03</p>
+                <p class="author">- Carlos Souza</p>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <section id="contato" class="contato hidden" class="contato">
+        <h3>Contate-nos</h3>
+        <p><strong>Mapa de Localização:</strong><br>123 Rua Principal, Cidade Central, Estado.</p>
+        <p><strong>E-mail:</strong><br>contato@atlasposture.com</p>
+        <p><strong>Telefone:</strong><br>+55 (11) 1234-5678</p>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+          let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          let windowHeight = window.innerHeight;
+          let documentHeight = document.documentElement.scrollHeight;
+      
+          if (scrollTop + windowHeight >= documentHeight) {
+            document.getElementById('contato').classList.remove('hidden');
+          } else {
+            document.getElementById('contato').classList.add('hidden');
+          }
+        });
+      </script>
+
+  
+  
+
+
+
+    
+
+<script>
+// Adicione este código ao final do seu script JavaScript existente
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Seleciona o link "Destaques" na barra de navegação
+    const destaqueLink = document.querySelector('.navegacao li:nth-child(2) a');
+
+    // Adiciona um ouvinte de evento de clique ao link
+    destaqueLink.addEventListener('click', function (event) {
+        // Impede o comportamento padrão do link
+        event.preventDefault();
+
+        // Obtém a posição da seção de Destaques do Óculos
+        const destaqueSection = document.querySelector('.testimonial');
+        const destaqueSectionTop = destaqueSection.offsetTop;
+
+        // Rola suavemente até a posição da seção de Destaques do Óculos
+        window.scrollTo({
+            top: destaqueSectionTop,
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const destaqueLink = document.querySelector('.navegacao li:nth-child(2) a');
+        destaqueLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            const destaqueSection = document.querySelector('.testimonial');
+            const destaqueSectionTop = destaqueSection.offsetTop;
+            window.scrollTo({
+                top: destaqueSectionTop,
+                behavior: 'smooth'
+            });
+        });
+    
+        const avaliacoesLink = document.querySelector('.navegacao li:nth-child(3) a');
+        avaliacoesLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            const avaliacoesSection = document.querySelector('.avaliacoes');
+            const avaliacoesSectionTop = avaliacoesSection.offsetTop;
+            window.scrollTo({
+                top: avaliacoesSectionTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+   
+    </body>
+
+
+    </html>
+</body>
+</html>
