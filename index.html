@@ -23,25 +23,24 @@
 <!-- Substitua a linha existente pela nova linha -->
 <div class="header-wrapper">
     <header>
-    
+        <img class="logo" src="./images/INFRATECH.png" alt="">
     
         <ul class="navegacao">
-            <img class="logo" src="./images/INFRATECH.png" alt="">
-            <li><a href="#">Visão geral</a></li>
-            <li><a href="#">Destaques</a></li>
-            <li><a href="#">Avaliações</a></li>
+            
+            <li><a href="#home">Visão geral</a></li>
+            <li><a href="#destaques do infratech">Destaques</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
             <li><a href="#">Contate-nos</a></li>
         </ul><!--navegacao-->
 
         <div class="header-icons">
-            <i class='bx bx-cart'></i>
-            <div id="menu"><i class='bx bx-menu'></i></div>
+            <div id="menu"><button id="login">Login</button></div>
         </div><!--header-icons-->
     </header>
 </div>
 
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-img">
              <img src="./images/fotocapa.jpg" class="one">
         </div><!--home-img-->
@@ -114,84 +113,14 @@
 
   
 
-    <section id="contato" class="contato hidden" class="contato">
+    <footer id="contato" class="contato hidden" class="contato">
         <h3>Contate-nos</h3>
         <p><strong>Mapa de Localização:</strong><br>123 Rua Principal, Cidade Central, Estado.</p>
         <p><strong>E-mail:</strong><br>contato@atlasposture.com</p>
         <p><strong>Telefone:</strong><br>+55 (11) 1234-5678</p>
-    </section>
-
-    <script>
-        window.addEventListener('scroll', function() {
-          let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          let windowHeight = window.innerHeight;
-          let documentHeight = document.documentElement.scrollHeight;
-      
-          if (scrollTop + windowHeight >= documentHeight) {
-            document.getElementById('contato').classList.remove('hidden');
-          } else {
-            document.getElementById('contato').classList.add('hidden');
-          }
-        });
-      </script>
+    </footer>
 
   
-  
-
-
-
-    
-
-<script>
-// Adicione este código ao final do seu script JavaScript existente
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Seleciona o link "Destaques" na barra de navegação
-    const destaqueLink = document.querySelector('.navegacao li:nth-child(2) a');
-
-    // Adiciona um ouvinte de evento de clique ao link
-    destaqueLink.addEventListener('click', function (event) {
-        // Impede o comportamento padrão do link
-        event.preventDefault();
-
-        // Obtém a posição da seção de Destaques do Óculos
-        const destaqueSection = document.querySelector('.testimonial');
-        const destaqueSectionTop = destaqueSection.offsetTop;
-
-        // Rola suavemente até a posição da seção de Destaques do Óculos
-        window.scrollTo({
-            top: destaqueSectionTop,
-            behavior: 'smooth'
-        });
-    });
-});
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const destaqueLink = document.querySelector('.navegacao li:nth-child(2) a');
-        destaqueLink.addEventListener('click', function (event) {
-            event.preventDefault();
-            const destaqueSection = document.querySelector('.testimonial');
-            const destaqueSectionTop = destaqueSection.offsetTop;
-            window.scrollTo({
-                top: destaqueSectionTop,
-                behavior: 'smooth'
-            });
-        });
-    
-        const avaliacoesLink = document.querySelector('.navegacao li:nth-child(3) a');
-        avaliacoesLink.addEventListener('click', function (event) {
-            event.preventDefault();
-            const avaliacoesSection = document.querySelector('.avaliacoes');
-            const avaliacoesSectionTop = avaliacoesSection.offsetTop;
-            window.scrollTo({
-                top: avaliacoesSectionTop,
-                behavior: 'smooth'
-            });
-        });
-    });
-    </script>
    
     </body>
 
