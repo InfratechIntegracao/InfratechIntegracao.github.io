@@ -36,49 +36,55 @@
 </head>
 <body>
     <div class="corpo"><!-- corpo start -->
-        <aside id="sidebar">
-            <div class="d-flex">
-              <div class="sidebar-logo">
-                <img src="/images/INFRATECH.png" alt="">
-              </div>
-            </div>
+      <aside id="sidebar">
+        <div class="d-flex">
+          <div class="sidebar-logo">
+            <img src="/images/INFRATECH.png" alt="">
+          </div>
+        </div>
 
-            <div class="menu">
-                <div class="sidebar-nav" >
-                  <li class="sidebar-item">
-                    <a href="/templates/controledeobras.html" class="sidebar-link">
-                      <i class="bi bi-camera-fill"></i>
-                      <button type='submit' onclick="controleO()"> | Controle de Obras</button>
-                    </a>
-                  </li>
-                  <li class="sidebar-item">
-                    <a href="/templates/controledemateriais.html" class="sidebar-link" ><i class="bi bi-pencil-square"></i>
-                      <button type='submit' onclick="controleM()">  | Controle de Materiais</button>
-                      </a> 
-                  </li>
-                  <li class="sidebar-item">
-                    <a href="/relatorioFarmacia.html" class="sidebar-link"><i class="bi bi-printer-fill"></i>
-                      <button type='submit' onclick="gerarelat()"> | Gerar Relatório</button>
-                    </a> 
-                  </li>
-              
-                  
-                </div>
-            </div>
-            <div class="sidebar-footer">
-               <button id="logout" onclick="logout()"><i id="logout" class="bi bi-box-arrow-left"></i> Logout</button> 
-              
-            </div>
-
-          </aside> <!--Navbar end-->
-
-        <div class="content">
-          <h1>Controle de Obras</h1>
+        <div class="menu">
+            <div class="sidebar-nav" >
+              <li class="sidebar-item" id="btnobras">                      
+                  <button type='submit' onclick="controleO()"><i class="bi bi-camera-fill"></i> | Controle de Obras</button>
+              </li>
+              <li class="sidebar-item" id="btnmateriais">
+                  <button type='submit' onclick="controleM()"><i class="bi bi-pencil-square"></i> | Controle de Materiais</button>
+              </li>
+              <li class="sidebar-item" id="btnrelatorio">
+                
+                  <button type='submit' onclick="gerarelat()"><i class="bi bi-printer-fill"></i> | Gerar Relatório</button>
+                
+              </li>
           
+              
+            </div>
+        </div>
+        <div class="sidebar-footer">
+           <button id="logout" onclick="logout()"><i id="logout" class="bi bi-box-arrow-left"></i> Logout</button> 
+          
+        </div>
 
+      </aside> <!--Navbar end-->
+      <div class="container"> 
+        <div class="select"><select id="imageSelect">
+        <option value=""" disabled selected>Select---</option>
+        <option value="0">Câmera 1</option>
+        <option value="1">Câmera 2</option>
+        <option value="2">Câmera 3</option>
+        </select>
+        </div>
+        <div class="content">
+          <div id="imageContainer">
+            <img src="/images/imagem1.jpg" alt="Imagem 1" class="imagem">
+            <img src="/images/imagem2.jpg" alt="Imagem 2" class="imagem">
+            <img src="/images/imagem3.jpg" alt="Imagem 3" class="imagem">
+          </div>
+          
+          <script src="/static/js/controlobras"></script>
         </div>
           
-
+      </div>
 
 
 

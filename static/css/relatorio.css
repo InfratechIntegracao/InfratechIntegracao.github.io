@@ -13,7 +13,7 @@
 
 
 #sidebar {
-    width: 250px;
+    width: 260px;
     min-width: 70px;
     height: 100vh;
     transition: all .25s ease-in-out;
@@ -26,6 +26,7 @@
 
 #sidebar div.menu i {
     color: #fff;
+    
 }
 
 .sidebar-logo img {
@@ -42,11 +43,13 @@
 .sidebar-nav {
     list-style: none;
     width: 250px;
+    
 }
 
 .sidebar-item {
     padding: 10px;
     width: 250px;
+    
 }
 
 .sidebar-item:hover {
@@ -55,15 +58,13 @@
 
 }
 
-.sidebar-item a {
-    text-decoration: none;
 
-}
 
 .sidebar-item button {
     background: none;
     color: #fff;
     border: none;
+    width: 100%;
 }
 
 .sidebar-footer {
@@ -100,6 +101,11 @@ button#logout {
     color: #000000;
 }
 
+.selecionado {
+    background: linear-gradient(90deg, #C00000 0%, #5A0000 100%);/* Por exemplo, mude a cor de fundo para azul */
+    border-left: 5px white solid;
+    
+}
 
 /* Corpo pag */
 

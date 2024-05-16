@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imprimir PDF</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> <!-- Importa a biblioteca jsPDF -->
+</head>
+<body>
+
+<script>
+// Função para converter a tabela em PDF e imprimir
+function imprimirPDF() {
+    // Cria um novo documento PDF
+    var doc = new jsPDF();
+    
+    // Define a posição inicial de impressão
+    var y = 10;
+    
+    // Adiciona um título ao documento
+    doc.text("Lista de Dados", 10, y);
+    y += 10; // Incrementa a posição Y
+    
+    // Obtém o conteúdo HTML da tabela
+    var table = document.getElementById("data-table");
+    
+    // Converte a tabela em uma string HTML
+    var htmlString = table.outerHTML;
+    
+    // Adiciona a tabela ao documento PDF
+    doc.fromHTML(htmlString, 10, y);
+    
+    // Imprime o documento PDF
+    doc.autoPrint();
+    
+    // Abre a janela de impressão
+    doc.output('dataurlnewwindow');
+}
+
+// Chama a função de impressão assim que a página for carregada
+imprimirPDF();
+</script>
+
+</body>
+</html>

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
-
+    
 }
 
 .corpo {
@@ -13,7 +13,7 @@
 
 
 #sidebar {
-    width: 250px;
+    width: 260px;
     min-width: 70px;
     height: 100vh;
     transition: all .25s ease-in-out;
@@ -26,6 +26,7 @@
 
 #sidebar div.menu i {
     color: #fff;
+    
 }
 
 .sidebar-logo img {
@@ -42,11 +43,13 @@
 .sidebar-nav {
     list-style: none;
     width: 250px;
+    
 }
 
 .sidebar-item {
     padding: 10px;
     width: 250px;
+    
 }
 
 .sidebar-item:hover {
@@ -55,15 +58,13 @@
 
 }
 
-.sidebar-item a {
-    text-decoration: none;
 
-}
 
 .sidebar-item button {
     background: none;
     color: #fff;
     border: none;
+    width: 100%;
 }
 
 .sidebar-footer {
@@ -99,11 +100,16 @@ button#logout {
 #logout {
     color: #000000;
 }
+.selecionado {
+    background: linear-gradient(90deg, #C00000 0%, #5A0000 100%);/* Por exemplo, mude a cor de fundo para azul */
+    border-left: 5px white solid;
+    
+}
 
 
 /* Corpo pag */
 
-.content {
+.container {
     color: rgb(255, 255, 255);
     width: 85vw;
     text-align: center;
@@ -115,3 +121,28 @@ button#logout {
     mix-blend-mode: plus-darker;
 
 }
+
+
+.select {
+    position: relative;
+    left: -2%;
+}
+
+#imageSelect    {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #Fff;
+    border: none;
+    position: relative;
+    left: 10%;
+}
+
+.imagem {
+    display: none;
+    border-radius: 20px;
+    width: 900px;
+    height: 600px;
+  }
+  

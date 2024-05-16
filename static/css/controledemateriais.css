@@ -13,7 +13,7 @@
 
 
 #sidebar {
-    width: 250px;
+    width: 260px;
     min-width: 70px;
     height: 100vh;
     transition: all .25s ease-in-out;
@@ -26,6 +26,7 @@
 
 #sidebar div.menu i {
     color: #fff;
+    
 }
 
 .sidebar-logo img {
@@ -42,11 +43,13 @@
 .sidebar-nav {
     list-style: none;
     width: 250px;
+    
 }
 
 .sidebar-item {
     padding: 10px;
     width: 250px;
+    
 }
 
 .sidebar-item:hover {
@@ -55,15 +58,13 @@
 
 }
 
-.sidebar-item a {
-    text-decoration: none;
 
-}
 
 .sidebar-item button {
     background: none;
     color: #fff;
     border: none;
+    width: 100%;
 }
 
 .sidebar-footer {
@@ -110,8 +111,72 @@ button#logout {
     justify-content: center;
     gap: 15px 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background: linear-gradient(117deg, #940101 6.2%, #921313 24.69%, #E01111 95.7%);
     mix-blend-mode: plus-darker;
+
+
+}
+
+.lista {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-bottom: 50px ;
+
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 50px; /* Espaçamento desejado entre as linhas */
+    
+
+    th, td {
+        line-height: 1; /* Define a altura da linha para o mínimo possível */
+    }
+}
+
+
+
+form {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-weight: 700;
+    #items {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+
+    
+        div>input {
+            background-color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 0 12px;
+            height: 35px;
+            width: 300px;
+        }
+    }
+
+}
+
+button {
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 30px;
+    width: 120px;
+    height: 30px;
+}
+
+
+
+.selecionado {
+    background: linear-gradient(90deg, #C00000 0%, #5A0000 100%);/* Por exemplo, mude a cor de fundo para azul */
+    border-left: 5px white solid;
 
 }
