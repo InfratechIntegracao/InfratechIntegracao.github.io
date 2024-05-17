@@ -1,9 +1,9 @@
 
 function voltarParaIndex() {
-  window.location.href = "/templates/inicio.html";
+  window.location.href = "/inicio.html";
 }
 
 function portal() {
-  window.location.href ="/templates/portal.html"
+  window.location.href ="/portal.html"
 }
 

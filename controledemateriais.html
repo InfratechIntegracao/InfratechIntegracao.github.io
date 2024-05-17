@@ -19,17 +19,14 @@
       
     <!-- links bootstrap end -->        
     
-    
-    
-
-    
 
 
     <!-- Links -->
-    <link rel="stylesheet" href="/static/css/portal.css">
+    <link rel="stylesheet" href="/static/css/controledemateriais.css">
     <link rel="shortcut icon" href="/images/INFRATECH.png" type="image/x-icon">
     
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
 
     
     <title>Infratech Integração</title>
@@ -45,22 +42,13 @@
 
             <div class="menu">
                 <div class="sidebar-nav" >
-                  <li class="sidebar-item">
-                    
-                      
-                      <button type='submit' onclick="controleO()" ><i class="bi bi-camera-fill"></i> | Controle de Obras</button>
-                    
+                  <li class="sidebar-item" id="btnobras">                      
+                      <button type='submit' onclick="controleO()"><i class="bi bi-camera-fill"></i> | Controle de Obras</button>
                   </li>
-                  <li class="sidebar-item">
-                    <a href="/usuarioPendente.html" class="sidebar-link" ><i class="bi bi-pencil-square"></i>
-                      <button type='submit' onclick="controleM()">  | Controle de Materiais</button>
-                      </a> 
+                  <li class="sidebar-item" id="btnmateriais">
+                      <button type='submit' onclick="controleM()"><i class="bi bi-pencil-square"></i> | Controle de Materiais</button>
                   </li>
-                  <li class="sidebar-item">
-                    <a href="/relatorioFarmacia.html" class="sidebar-link"><i class="bi bi-printer-fill"></i>
-                      <button type='submit' onclick="gerarelat()"> | Gerar Relatório</button>
-                    </a> 
-                  </li>
+                  
               
                   
                 </div>
@@ -73,9 +61,42 @@
           </aside> <!--Navbar end-->
 
         <div class="content">
-          <h1>Bem vindo!</h1>
+          <div class="lista">
+            <table id="data-table">
+              <tr>
+                  <th>Material</th>
+                  <th>Quantidade</th>
+                  <th>Preço</th>
+              </tr>
+              <!-- Aqui os dados serão adicionados dinamicamente via JavaScript -->
+            </table>
+          </div>  
+        <h2>Inserir Itens</h2>
           
+        
 
+
+
+        <form id="data-form">
+            <div id="items">
+              <div><label for="material">Material:</label><br>
+                <input type="text" id="material" name="material" required><br><br>
+              </div>
+              <div>
+                <label for="quantidade">Quantidade:</label><br>
+                <input type="number" id="quantidade" name="quantidade" required><br><br>
+              </div>
+              <div>
+                <label for="preco">Preço:</label><br>
+                <input type="number" id="preco" name="preco" step="0.01" required><br><br>
+              </div>
+            </div>
+            <div>
+              
+            </div>  
+        </form>
+        <button type="button" onclick="adicionarDado()">Adicionar</button>
+        <button type="button" id="btnImprimirPDF" >Imprimir PDF</button>
         </div>
           
 
@@ -85,8 +106,8 @@
     </div> <!--corpo end-->
    
     <script src="/static/js/portal.js"></script>
-    <script src="/static/js/portal2.js"></script>
-
+    <script src="/static/js/controlmateriais.js"></script>
+    <script src="/static/js/selecionarBotao.js"></script>
 
 </body>
 </html>

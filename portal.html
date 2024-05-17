@@ -19,10 +19,14 @@
       
     <!-- links bootstrap end -->        
     
+    
+    
+
+    
 
 
     <!-- Links -->
-    <link rel="stylesheet" href="/static/css/controledemateriais.css">
+    <link rel="stylesheet" href="/static/css/portal.css">
     <link rel="shortcut icon" href="/images/INFRATECH.png" type="image/x-icon">
     
 
@@ -41,16 +45,16 @@
 
             <div class="menu">
                 <div class="sidebar-nav" >
-                  <li class="sidebar-item" id="btnobras">                      
-                      <button type='submit' onclick="controleO()"><i class="bi bi-camera-fill"></i> | Controle de Obras</button>
-                  </li>
-                  <li class="sidebar-item" id="btnmateriais">
-                      <button type='submit' onclick="controleM()"><i class="bi bi-pencil-square"></i> | Controle de Materiais</button>
-                  </li>
-                  <li class="sidebar-item" id="btnrelatorio">
+                  <li class="sidebar-item">
                     
-                      <button type='submit' onclick="gerarelat()"><i class="bi bi-printer-fill"></i> | Gerar Relatório</button>
+                      
+                      <button type='submit' onclick="controleO()" ><i class="bi bi-camera-fill"></i> | Controle de Obras</button>
                     
+                  </li>
+                  <li class="sidebar-item">
+                    
+                      <button type='submit' onclick="controleM()"><i class="bi bi-pencil-square"></i>  | Controle de Materiais</button>
+                       
                   </li>
               
                   
@@ -64,42 +68,9 @@
           </aside> <!--Navbar end-->
 
         <div class="content">
-          <div class="lista">
-            <table id="data-table">
-              <tr>
-                  <th>Material</th>
-                  <th>Quantidade</th>
-                  <th>Preço</th>
-              </tr>
-              <!-- Aqui os dados serão adicionados dinamicamente via JavaScript -->
-            </table>
-          </div>  
-        <h2>Inserir Itens</h2>
+          <h1>Bem vindo!</h1>
           
-        
 
-
-
-        <form id="data-form">
-            <div id="items">
-              <div><label for="material">Material:</label><br>
-                <input type="text" id="material" name="material" required><br><br>
-              </div>
-              <div>
-                <label for="quantidade">Quantidade:</label><br>
-                <input type="number" id="quantidade" name="quantidade" required><br><br>
-              </div>
-              <div>
-                <label for="preco">Preço:</label><br>
-                <input type="number" id="preco" name="preco" step="0.01" required><br><br>
-              </div>
-            </div>
-            <div>
-              
-            </div>  
-        </form>
-        <button type="button" onclick="adicionarDado()">Adicionar</button>
-        <button type="button" onclick="imprimirPDF()">Imprimir PDF</button>
         </div>
           
 
@@ -109,8 +80,8 @@
     </div> <!--corpo end-->
    
     <script src="/static/js/portal.js"></script>
-    <script src="/static/js/controlmateriais.js"></script>
-    <script src="/static/js/selecionarBotao.js"></script>
+    <script src="/static/js/portal2.js"></script>
+
 
 </body>
 </html>

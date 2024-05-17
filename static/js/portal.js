@@ -1,14 +1,15 @@
 function controleO() {
-    window.location.href = "/templates/controledeobras.html"
+    window.location.href = "/controledeobras.html"
 }
 
 function controleM() {
-    window.location.href = "/templates/controledemateriais.html"
+    window.location.href = "/controledemateriais.html"
 }
 
-function gerarelat() {
-    window.location.href = "/templates/relatorio.html"
+function logout() {
+    window.location.href = "/inicio.html"
 }
+
 
 document.addEventListener("DOMContentLoaded", function() {
     // Obtém o nome da página atual
@@ -27,4 +28,4 @@ document.addEventListener("DOMContentLoaded", function() {
         // Adiciona a classe "selecionado" ao botão
         document.getElementById("btnrelatorio").classList.add("selecionado");
     }
-});
+}); 
