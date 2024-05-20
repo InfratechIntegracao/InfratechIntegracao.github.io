@@ -216,28 +216,7 @@ header {
     gap: 40px;
 }
 
-.feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.feature i {
-    font-size: 36px;
-    color: var(--main-color);
-    margin-bottom: 20px;
-}
-
-.feature p {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--tex-color);
-    max-width: 400px;
-    margin: 0 auto;
-}
 
 .body {
     margin: 0;
@@ -307,3 +286,34 @@ ion-icon {
     color: yellow;
 }
  
+
+
+
+
+
+
+
+
+
+.feature {
+    display: flex;
+    
+    margin-top: 20px;
+    max-width:800px ;
+}
+
+.feature div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img.carinha {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
